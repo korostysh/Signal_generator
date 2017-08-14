@@ -26,10 +26,10 @@ void MainWindow::parseFile(QFile &file)
 
         if (line.length() == 0) continue;
         if (line[0] == '/') continue;
-        if (line[0] == '\n') continue; //again messege for GIT
+        if (line[0] == '\n') continue;
 
         if (line == "[Parameters]\n"){
-            lastType = inputType::researchData;
+            lastType = inputType::researchData; //comment
             continue;
         }
 
