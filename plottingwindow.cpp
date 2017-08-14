@@ -3,6 +3,7 @@
 #include <QFileDialog>
 #include <QTextStream>
 #include "mainwindow.h"
+#include "vector"
 
 PlottingWindow::PlottingWindow(MainWindow *parent) :
     QMainWindow(parent), w(parent),
