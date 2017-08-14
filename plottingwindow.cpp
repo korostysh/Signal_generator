@@ -18,7 +18,7 @@ PlottingWindow::~PlottingWindow()
 
 QCustomPlot *PlottingWindow::plot()
 {
-    return this->ui->widget;
+    return this->ui->widget;  //change for a Git
 }
 
 void PlottingWindow::setData(QVector<double> values)
