@@ -10,6 +10,7 @@
 #include "plottingwindow.h"
 #include "qcustomplot-source/qcustomplot.h"
 #include "QtMath"
+#include "vector"
 
 void MainWindow::parseFile(QFile &file)
 {
@@ -25,7 +26,7 @@ void MainWindow::parseFile(QFile &file)
 
         if (line.length() == 0) continue;
         if (line[0] == '/') continue;
-        if (line[0] == '\n') continue;
+        if (line[0] == '\n') continue; //again messege for GIT
 
         if (line == "[Parameters]\n"){
             lastType = inputType::researchData;
@@ -401,5 +402,3 @@ void MainWindow::on_bpRun_clicked()
     W->plot()->graph(0)->setLineStyle(QCPGraph::lsStepLeft);
     W->show();
 }
-
-
